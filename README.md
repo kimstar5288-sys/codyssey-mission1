@@ -9,7 +9,7 @@
 
 ## 2. 실행 환경
 
-- 운영체제: Windows
+- 운영체제: Windows / WSL2
 - 터미널: PowerShell
 - Shell: PowerShell
 
