@@ -125,7 +125,7 @@ Remove-Item delete-me.txt
 2) Docker Desktop 실습실행 결과
    {첨부파일  docker-terminal-log.txt 참조)
    {첨부파일  docker-desktop 화면.png 참조)
-   (첨부파일                          첨조)
+   (첨부파일  dockerfile-terminal-log.txt 첨조)
 
 3) 실습 결과
 PowerShell 명령어를 사용하여 파일과 폴더를 직접 관리하는 방법을 익혔다.
