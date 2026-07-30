@@ -135,11 +135,11 @@ Remove-Item delete-me.txt
    (첨부파일 docker image.png 참조)
    (첨부파일 dockervolume_terminal-log.txt 참조)
 
-3)Git 설정 및 Github 연동 실습실행 결과
+3) Git 설정 및 Github 연동 실습실행 결과
    (첨부파일 gitterminal-log.txt참조)
    (참부파일 github 연동.png 참조)
    
-4) 실습 결과
+##5. 실습 결과
 PowerShell 명령어를 사용하여 파일과 폴더를 직접 관리하는 방법을 익혔다.
 Docker 기본 운영 명령을 익히고, 컨테이너 실행실습, Docker Image 만들기, 포트 매칭,Docker Volume 영속성 검증을 하였다.
 Git설치와 Github 연동을 하였다.
