@@ -1,0 +1,299 @@
+﻿**********************
+Windows PowerShell 기록 시작
+시작 시간: 20260730202556
+사용자 이름: DESKTOP-FOK8PPV\김성완
+RunAs 사용자: DESKTOP-FOK8PPV\김성완
+구성 이름: 
+Machine: DESKTOP-FOK8PPV (Microsoft Windows NT 10.0.19045.0)
+호스트 응용 프로그램: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+프로세스 ID: 26780
+PSVersion: 5.1.19041.6456
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.19041.6456
+BuildVersion: 10.0.19041.6456
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+기록이 시작되었습니다. 출력 파일은 gitterminal-log-txt입니다.
+PS C:\Users\김성완> git config --global user.name "Kim SungWan"
+
+PS C:\Users\김성완> git config --global init.defaultBranch main
+
+PS C:\Users\김성완> git config --list
+diff.astextplain.textconv=astextplain
+filter.lfs.clean=git-lfs clean -- %f
+filter.lfs.smudge=git-lfs smudge -- %f
+filter.lfs.process=git-lfs filter-process
+filter.lfs.required=true
+http.sslbackend=schannel
+core.autocrlf=true
+core.fscache=true
+core.symlinks=false
+pull.rebase=false
+credential.helper=manager
+credential.https://dev.azure.com.usehttppath=true
+init.defaultbranch=master
+user.name=Kim SungWan
+init.defaultbranch=main
+PS C:\Users\김성완> git --version
+git version 2.55.0.windows.3
+PS C:\Users\김성완> cd $HOME\Documents\codyssey-mission1
+PS C:\Users\김성완\Documents\codyssey-mission1> git init
+Initialized empty Git repository in C:/Users/김 성 완 /Documents/codyssey-mission1/.git/
+PS C:\Users\김성완\Documents\codyssey-mission1> git add .
+
+PS C:\Users\김성완\Documents\codyssey-mission1> git commit -m "Mission 1"
+Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got '김 성 완 @DESKTOP-FOK8PPV.(none)')
+PS C:\Users\김성완\Documents\codyssey-mission1> git remote add origin https://github.com/kimstar5288-sys/codyssey-missions.git
+
+PS C:\Users\김성완\Documents\codyssey-mission1> git push -u origin main
+error: src refspec main does not match any
+error: failed to push some refs to 'https://github.com/kimstar5288-sys/codyssey-missions.git'
+PS C:\Users\김성완\Documents\codyssey-mission1> git remote add origin https://github.com/kimstar5288-sys/codyssey-mission1.git
+error: remote origin already exists.
+PS C:\Users\김성완\Documents\codyssey-mission1> git push -u origin main
+error: src refspec main does not match any
+error: failed to push some refs to 'https://github.com/kimstar5288-sys/codyssey-missions.git'
+PS C:\Users\김성완\Documents\codyssey-mission1> Get-ChildItem
+
+
+    디렉터리: C:\Users\김성완\Documents\codyssey-mission1
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----      2026-07-28   오후 4:32                practice
+d-----      2026-07-29   오후 2:34                site
+-a----      2026-07-29   오후 2:32            114 Dockerfile
+-a----      2026-07-28   오후 4:49           2519 README.md
+-a----      2026-07-28   오후 4:34          12282 terminal-log.txt
+
+
+PS C:\Users\김성완\Documents\codyssey-mission1> git status
+On branch main
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   Dockerfile
+        new file:   README.md
+        new file:   hidden.txt
+        new file:   practice/backup/renamed.txt
+        new file:   practice/empty.txt
+        new file:   practice/hello.txt
+        new file:   site/index.html
+        new file:   terminal-log.txt
+PS C:\Users\김성완\Documents\codyssey-mission1> git add .
+
+PS C:\Users\김성완\Documents\codyssey-mission1> git commit -m "Complete Codyssey mission 1"
+Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got '김 성 완 @DESKTOP-FOK8PPV.(none)')
+PS C:\Users\김성완\Documents\codyssey-mission1> git config --global user.name "Kim SungWan"
+
+PS C:\Users\김성완\Documents\codyssey-mission1> git commit -m "Complete Codyssey mission 1"
+Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got '김 성 완 @DESKTOP-FOK8PPV.(none)')
+PS C:\Users\김성완\Documents\codyssey-mission1> git config --global user.email "kimstar5288@gmail.com"
+
+PS C:\Users\김성완\Documents\codyssey-mission1> git config --list
+diff.astextplain.textconv=astextplain
+filter.lfs.clean=git-lfs clean -- %f
+filter.lfs.smudge=git-lfs smudge -- %f
+filter.lfs.process=git-lfs filter-process
+filter.lfs.required=true
+http.sslbackend=schannel
+core.autocrlf=true
+core.fscache=true
+core.symlinks=false
+pull.rebase=false
+credential.helper=manager
+credential.https://dev.azure.com.usehttppath=true
+init.defaultbranch=master
+user.name=Kim SungWan
+user.email=kimstar5288@gmail.com
+init.defaultbranch=main
+core.repositoryformatversion=0
+core.filemode=false
+core.bare=false
+core.logallrefupdates=true
+core.symlinks=false
+core.ignorecase=true
+remote.origin.url=https://github.com/kimstar5288-sys/codyssey-missions.git
+remote.origin.fetch=+refs/heads/*:refs/remotes/origin/*
+PS C:\Users\김성완\Documents\codyssey-mission1> git init
+Reinitialized existing Git repository in C:/Users/김 성 완 /Documents/codyssey-mission1/.git/
+PS C:\Users\김성완\Documents\codyssey-mission1> git add .
+
+PS C:\Users\김성완\Documents\codyssey-mission1> git commit -m "Mission 1"
+[main (root-commit) 2e5d99e] Mission 1
+ 8 files changed, 491 insertions(+)
+ create mode 100644 Dockerfile
+ create mode 100644 README.md
+ create mode 100644 hidden.txt
+ create mode 100644 practice/backup/renamed.txt
+ create mode 100644 practice/empty.txt
+ create mode 100644 practice/hello.txt
+ create mode 100644 site/index.html
+ create mode 100644 terminal-log.txt
+PS C:\Users\김성완\Documents\codyssey-mission1> git remote add origin https://github.com/kimstar5288-sys/codyssey-mission1.git
+error: remote origin already exists.
+PS C:\Users\김성완\Documents\codyssey-mission1> git push -u origin main
+info: please complete authentication in your browser...
+remote: Repository not found.
+fatal: repository 'https://github.com/kimstar5288-sys/codyssey-missions.git/' not found
+PS C:\Users\김성완\Documents\codyssey-mission1> git init
+Reinitialized existing Git repository in C:/Users/김 성 완 /Documents/codyssey-mission1/.git/
+PS C:\Users\김성완\Documents\codyssey-mission1> git add .
+
+PS C:\Users\김성완\Documents\codyssey-mission1> git commit -m "Mission 1"
+On branch main
+nothing to commit, working tree clean
+PS C:\Users\김성완\Documents\codyssey-mission1> git remote add origin https://github.com/kimstar5288-sys/codyssey-mission1.git
+error: remote origin already exists.
+PS C:\Users\김성완\Documents\codyssey-mission1> git push -u origin main
+info: please complete authentication in your browser...
+remote: Repository not found.
+fatal: repository 'https://github.com/kimstar5288-sys/codyssey-missions.git/' not found
+PS C:\Users\김성완\Documents\codyssey-mission1> git remote -v
+origin  https://github.com/kimstar5288-sys/codyssey-missions.git (fetch)
+origin  https://github.com/kimstar5288-sys/codyssey-missions.git (push)
+PS C:\Users\김성완\Documents\codyssey-mission1> git remote set-url origin https://github.com/kimstar5288-sys/codyssey-mission1.git
+
+PS C:\Users\김성완\Documents\codyssey-mission1> git remote -v
+origin  https://github.com/kimstar5288-sys/codyssey-mission1.git (fetch)
+origin  https://github.com/kimstar5288-sys/codyssey-mission1.git (push)
+PS C:\Users\김성완\Documents\codyssey-mission1> git push -u origin main
+info: please complete authentication in your browser...
+To https://github.com/kimstar5288-sys/codyssey-mission1.git
+ ! [rejected]        main -> main (fetch first)
+error: failed to push some refs to 'https://github.com/kimstar5288-sys/codyssey-mission1.git'
+hint: Updates were rejected because the remote contains work that you do not
+hint: have locally. This is usually caused by another repository pushing to
+hint: the same ref. If you want to integrate the remote changes, use
+hint: 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+PS C:\Users\김성완\Documents\codyssey-mission1> git pull origin main --allow-unrelated-histories
+remote: Enumerating objects: 53, done.
+remote: Counting objects: 100% (53/53), done.
+remote: Compressing objects: 100% (49/49), done.
+remote: Total 53 (delta 23), reused 0 (delta 0), pack-reused 0 (from 0)
+Unpacking objects: 100% (53/53), 216.11 KiB | 616.00 KiB/s, done.
+From https://github.com/kimstar5288-sys/codyssey-mission1
+ * branch            main       -> FETCH_HEAD
+ * [new branch]      main       -> origin/main
+Auto-merging README.md
+CONFLICT (add/add): Merge conflict in README.md
+Automatic merge failed; fix conflicts and then commit the result.
+PS C:\Users\김성완\Documents\codyssey-mission1> git push -u origin main
+To https://github.com/kimstar5288-sys/codyssey-mission1.git
+ ! [rejected]        main -> main (non-fast-forward)
+error: failed to push some refs to 'https://github.com/kimstar5288-sys/codyssey-mission1.git'
+hint: Updates were rejected because the tip of your current branch is behind
+hint: its remote counterpart. If you want to integrate the remote changes,
+hint: use 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+PS C:\Users\김성완\Documents\codyssey-mission1> git status
+On branch main
+You have unmerged paths.
+  (fix conflicts and run "git commit")
+  (use "git merge --abort" to abort the merge)
+
+Changes to be committed:
+        new file:   "docker desktp \355\231\224\353\251\264.png"
+        new file:   docker image.png
+        new file:   docker-terminal-log.txt
+        new file:   dockerfile-terminal-log.txt
+        new file:   dockerimage-terminal-log.txt
+        new file:   dockervolume_terminal-log.txt
+        new file:   index.html
+        new file:   "\355\204\260\353\257\270\353\204\220-terminal-log.txt"
+
+Unmerged paths:
+  (use "git add <file>..." to mark resolution)
+        both added:      README.md
+PS C:\Users\김성완\Documents\codyssey-mission1> git add .
+git commit -m "Merge remote and local files"
+git push -u origin main
+warning: in the working copy of 'README.md', LF will be replaced by CRLF the next time Git touches it
+[main ea75c98] Merge remote and local files
+Enumerating objects: 16, done.
+Counting objects: 100% (16/16), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (10/10), done.
+Writing objects: 100% (14/14), 3.21 KiB | 156.00 KiB/s, done.
+Total 14 (delta 4), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (4/4), completed with 2 local objects.
+To https://github.com/kimstar5288-sys/codyssey-mission1.git
+   da8c91a..ea75c98  main -> main
+branch 'main' set up to track 'origin/main'.
+PS C:\Users\김성완\Documents\codyssey-mission1> git pull origin main --allow-unrelated-histories
+From https://github.com/kimstar5288-sys/codyssey-mission1
+ * branch            main       -> FETCH_HEAD
+Already up to date.
+PS C:\Users\김성완\Documents\codyssey-mission1> git pull origin main --allow-unrelated-histories
+git push -u origin main
+From https://github.com/kimstar5288-sys/codyssey-mission1
+ * branch            main       -> FETCH_HEAD
+Already up to date.
+branch 'main' set up to track 'origin/main'.
+Everything up-to-date
+PS C:\Users\김성완\Documents\codyssey-mission1> git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+PS C:\Users\김성완\Documents\codyssey-mission1> git remote set-url origin https://github.com/kimstar5288-sys/codyssey-mission1.git
+
+PS C:\Users\김성완\Documents\codyssey-mission1> git push -u origin main
+branch 'main' set up to track 'origin/main'.
+Everything up-to-date
+PS C:\Users\김성완\Documents\codyssey-mission1> git remote set-url origin https://github.com/kimstar5288-sys/codyssey-mission1.git
+git push -u origin main
+
+branch 'main' set up to track 'origin/main'.
+Everything up-to-date
+PS C:\Users\김성완\Documents\codyssey-mission1> git remote -v
+origin  https://github.com/kimstar5288-sys/codyssey-mission1.git (fetch)
+origin  https://github.com/kimstar5288-sys/codyssey-mission1.git (push)
+PS C:\Users\김성완\Documents\codyssey-mission1> Stop-Transcript
+**********************
+Windows PowerShell 기록 끝
+종료 시간: 20260730211116
+**********************
