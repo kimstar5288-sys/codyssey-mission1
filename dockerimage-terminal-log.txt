@@ -1,0 +1,217 @@
+﻿**********************
+Windows PowerShell 기록 시작
+시작 시간: 20260730175127
+사용자 이름: DESKTOP-FOK8PPV\김성완
+RunAs 사용자: DESKTOP-FOK8PPV\김성완
+구성 이름: 
+Machine: DESKTOP-FOK8PPV (Microsoft Windows NT 10.0.19045.0)
+호스트 응용 프로그램: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+프로세스 ID: 25824
+PSVersion: 5.1.19041.6456
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.19041.6456
+BuildVersion: 10.0.19041.6456
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+기록이 시작되었습니다. 출력 파일은 diterminal-log.txt입니다.
+PS C:\Users\김성완> docker info
+Client:
+ Version:    29.6.2
+ Context:    desktop-linux
+ Debug Mode: false
+ Plugins:
+  agent: Docker AI Agent Runner (Docker Inc.)
+    Version:  v1.111.0
+    Path:     C:\Program Files\Docker\cli-plugins\docker-agent.exe
+  ai: Docker AI Agent - Ask Gordon (Docker Inc.)
+    Version:  v1.27.0
+    Path:     C:\Program Files\Docker\cli-plugins\docker-ai.exe
+  buildx: Docker Buildx (Docker Inc.)
+    Version:  v0.35.0-desktop.2
+    Path:     C:\Program Files\Docker\cli-plugins\docker-buildx.exe
+  compose: Docker Compose (Docker Inc.)
+    Version:  v5.3.1
+    Path:     C:\Program Files\Docker\cli-plugins\docker-compose.exe
+  debug: Get a shell into any image or container (Docker Inc.)
+    Version:  0.0.47
+    Path:     C:\Program Files\Docker\cli-plugins\docker-debug.exe
+  desktop: Docker Desktop commands (Docker Inc.)
+    Version:  v0.4.3
+    Path:     C:\Program Files\Docker\cli-plugins\docker-desktop.exe
+  dhi: CLI for managing Docker Hardened Images (Docker Inc.)
+    Version:  v0.0.7
+    Path:     C:\Program Files\Docker\cli-plugins\docker-dhi.exe
+  extension: Manages Docker extensions (Docker Inc.)
+    Version:  v0.2.31
+    Path:     C:\Program Files\Docker\cli-plugins\docker-extension.exe
+  init: Creates Docker-related starter files for your project (Docker Inc.)
+    Version:  v1.4.0
+    Path:     C:\Program Files\Docker\cli-plugins\docker-init.exe
+  mcp: Docker MCP Plugin (Docker Inc.)
+    Version:  v0.43.3
+    Path:     C:\Program Files\Docker\cli-plugins\docker-mcp.exe
+  model: Docker Model Runner (Docker Inc.)
+    Version:  v1.2.6
+    Path:     C:\Program Files\Docker\cli-plugins\docker-model.exe
+  offload: Docker Offload (Docker Inc.)
+    Version:  v0.6.9
+    Path:     C:\Program Files\Docker\cli-plugins\docker-offload.exe
+  pass: Docker Pass Secrets Manager Plugin (beta) (Docker Inc.)
+    Version:  v0.2.0
+    Path:     C:\Program Files\Docker\cli-plugins\docker-pass.exe
+  sandbox: "docker sandbox" is deprecated, use Docker Sandboxes instead (Docker Inc.)
+    Version:  v0.13.0
+    Path:     C:\Program Files\Docker\cli-plugins\docker-sandbox.exe
+  scout: Docker Scout (Docker Inc.)
+    Version:  v1.23.1
+    Path:     C:\Program Files\Docker\cli-plugins\docker-scout.exe
+
+Server:
+ Containers: 3
+  Running: 1
+  Paused: 0
+  Stopped: 2
+ Images: 3
+ Server Version: 29.6.2
+ Storage Driver: overlayfs
+  driver-type: io.containerd.snapshotter.v1
+ Logging Driver: json-file
+ Cgroup Driver: cgroupfs
+ Cgroup Version: 2
+ Plugins:
+  Volume: local
+  Network: bridge host ipvlan macvlan null overlay
+  Log: awslogs fluentd gcplogs gelf journald json-file local splunk syslog
+ CDI spec directories:
+  /etc/cdi
+  /var/run/cdi
+ Discovered Devices:
+  cdi: docker.com/gpu=webgpu
+ Swarm: inactive
+ Runtimes: io.containerd.runc.v2 nvidia runc
+ Default Runtime: runc
+ Init Binary: docker-init
+ containerd version: e53c7c1516c3b2bff98eb76f1f4117477e6f4e66
+ runc version: v1.3.6-0-g491b69ba
+ init version: de40ad0
+ Security Options:
+  seccomp
+   Profile: builtin
+  cgroupns
+ Kernel Version: 6.18.33.2-microsoft-standard-WSL2
+ Operating System: Docker Desktop
+ OSType: linux
+ Architecture: x86_64
+ CPUs: 4
+ Total Memory: 3.78GiB
+ Name: docker-desktop
+ ID: 32f9fabd-2f9e-4e0d-a355-085b5bbe69bf
+ Docker Root Dir: /var/lib/docker
+ Debug Mode: false
+ HTTP Proxy: http.docker.internal:3128
+ HTTPS Proxy: http.docker.internal:3128
+ No Proxy: hubproxy.docker.internal
+ Labels:
+  com.docker.desktop.address=npipe://\\.\pipe\docker_cli
+ Experimental: false
+ Insecure Registries:
+  hubproxy.docker.internal:5555
+  ::1/128
+  127.0.0.0/8
+ Live Restore Enabled: false
+ Firewall Backend: iptables
+PS C:\Users\김성완> cd $HOME\Documents\codyssey-mission1
+PS C:\Users\김성완\Documents\codyssey-mission1> Get-ChildItem -Recurse
+
+
+    디렉터리: C:\Users\김성완\Documents\codyssey-mission1
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----      2026-07-28   오후 4:32                practice
+d-----      2026-07-29   오후 2:34                site
+-a----      2026-07-29   오후 2:32            114 Dockerfile
+-a----      2026-07-28   오후 4:49           2519 README.md
+-a----      2026-07-28   오후 4:34          12282 terminal-log.txt
+
+
+    디렉터리: C:\Users\김성완\Documents\codyssey-mission1\practice
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----      2026-07-28   오후 4:26                backup
+-a----      2026-07-28   오후 4:14              0 empty.txt
+-a----      2026-07-28   오후 4:15             40 hello.txt
+
+
+    디렉터리: C:\Users\김성완\Documents\codyssey-mission1\practice\backup
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----      2026-07-28   오후 4:15             40 renamed.txt
+
+
+    디렉터리: C:\Users\김성완\Documents\codyssey-mission1\site
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----      2026-07-29   오후 2:35            171 index.html
+
+
+PS C:\Users\김성완\Documents\codyssey-mission1> docker build -t codyssey-mission1 .
+[+] Building 5.0s (8/8) FINISHED                                                                   docker:desktop-linux
+ => [internal] load build definition from Dockerfile                                                               0.2s
+ => => transferring dockerfile: 151B                                                                               0.1s
+ => [internal] load metadata for docker.io/library/nginx:alpine                                                    3.0s
+ => [auth] library/nginx:pull token for registry-1.docker.io                                                       0.0s
+ => [internal] load .dockerignore                                                                                  0.1s
+ => => transferring context: 2B                                                                                    0.0s
+ => [internal] load build context                                                                                  0.1s
+ => => transferring context: 61B                                                                                   0.1s
+ => [1/2] FROM docker.io/library/nginx:alpine@sha256:4a73073bd557c65b759505da037898b61f1be6cbcc3c2c3aeac22d2a470c  0.2s
+ => => resolve docker.io/library/nginx:alpine@sha256:4a73073bd557c65b759505da037898b61f1be6cbcc3c2c3aeac22d2a470c  0.2s
+ => CACHED [2/2] COPY site/ /usr/share/nginx/html/                                                                 0.0s
+ => exporting to image                                                                                             0.8s
+ => => exporting layers                                                                                            0.1s
+ => => exporting manifest sha256:85ef3515366ee657e6c36a9290f29bad992f68529cc48f173850a63ab713f8ae                  0.0s
+ => => exporting config sha256:4af51dc66e4b080f8256b5cd9535165e6a3f51869502c5af2e236c20e81f91c5                    0.0s
+ => => exporting attestation manifest sha256:66272ca0b1c3e95dbf4d5f250e44e56bdaa49c4b27ce9fd706acd1a98a907669      0.2s
+ => => exporting manifest list sha256:4ab1a6b8d5e957efd129d9757cea34b7d0568b4099dda52a087aefc22dd2120d             0.1s
+ => => naming to docker.io/library/codyssey-mission1:latest                                                        0.0s
+ => => unpacking to docker.io/library/codyssey-mission1:latest                                                     0.0s
+PS C:\Users\김성완\Documents\codyssey-mission1> docker images
+                                                                                                   i Info →    U  In Use
+IMAGE                      ID             DISK USAGE   CONTENT SIZE   EXTRA
+codyssey-mission1:latest   4ab1a6b8d5e9       92.7MB         26.1MB
+hello-world:latest         c3cbe1cc1aa5       25.9kB         9.49kB    U
+ubuntu:latest              3131b4cc82a7        161MB         45.3MB    U
+PS C:\Users\김성완\Documents\codyssey-mission1> docker run -d -p 8080:80 --name codyssey-web codyssey-mission1
+e976857aefe8ed1fe3bf4a8a3554c84e699c8697cc434e0974ee5fead80ddd5f
+PS C:\Users\김성완\Documents\codyssey-mission1> docker run -d -p 8080:80 --name codyssey-web codyssey-mission1
+
+What's next:
+    Debug this container error with Gordon →  docker ai "help me fix this container error"
+docker: Error response from daemon: Conflict. The container name "/codyssey-web" is already in use by container "e976857
+aefe8ed1fe3bf4a8a3554c84e699c8697cc434e0974ee5fead80ddd5f". You have to remove (or rename) that container to be able to
+reuse that name.
+
+Run 'docker run --help' for more information
+PS C:\Users\김성완\Documents\codyssey-mission1> docker ps
+CONTAINER ID   IMAGE               COMMAND                   CREATED         STATUS         PORTS
+              NAMES
+e976857aefe8   codyssey-mission1   "/docker-entrypoint.… "   2 minutes ago   Up 2 minutes   0.0.0.0:8080->80/tcp, [::]:8
+080->80/tcp   codyssey-web
+a1bd4d51a982   ubuntu              "bash"                    29 hours ago    Up 29 hours
+              ubuntu-test
+PS C:\Users\김성완\Documents\codyssey-mission1> Stop-Transcript
+**********************
+Windows PowerShell 기록 끝
+종료 시간: 20260730175944
+**********************
