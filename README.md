@@ -34,7 +34,8 @@
 - [x] Docker 볼륨 영속성 검증
 
 3) Git 설정 및 Github 연동 실습
-
+- [x] Git 사용자 정보/기본 브랜치 설정 완료 등
+- [x] Github 로그인과 저장소 연동
   
 
 ## 4. 수행로그
@@ -133,6 +134,9 @@ Remove-Item delete-me.txt
    (첨부파일 dockerimage-terminal-log.txt 참조)
    (첨부파일 docker image.png 참조)
    (첨부파일 dockervolume_terminal-log.txt 참조)
+
+3)Git 설정 및 Github 연동 실습실행 결과
+   (첨부파일 
    
 4) 실습 결과
 PowerShell 명령어를 사용하여 파일과 폴더를 직접 관리하는 방법을 익혔다.
