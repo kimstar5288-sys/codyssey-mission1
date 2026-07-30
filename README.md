@@ -1,15 +1,17 @@
 <<<<<<< HEAD
 
 # Codyssey 미션 1
-[ PowerShell 터미널 기본 조작 실습]
+
 ## 1. 프로젝트 개요
 
-PowerShell 터미널을 사용하여 파일과 폴더를 생성하고,
-복사하고, 이동하고, 이름을 변경하고, 삭제하는 방법을 실습하였다.
+- PowerShell 터미널을 사용하여 파일과 폴더를 생성하고,
+  복사하고, 이동하고, 이름을 변경하고, 삭제하는 방법을 실습하였다.
+- Docker Desktop 설치 및 기본 점검, 기본운영명려웃행, 컨테이너 실행실습, Docker 이미지 제작, 포트 매필 및 접속, 볼륨 영속성 검증하였다.
+- Git 설정 및 Github와 연동하였다.
 
 ## 2. 실행 환경
 
-- 운영체제: Windows
+- 운영체제: Windows /WSL
 - 터미널: PowerShell
 - Shell: PowerShell
 
