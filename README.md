@@ -136,7 +136,7 @@ Remove-Item delete-me.txt
    (첨부파일 dockervolume_terminal-log.txt 참조)
 
 3) Git 설정 및 Github 연동 실습실행 결과
-   (첨부파일 gitterminal-log.txt참조)
+   (첨부파일 GitGithub연동-log-txt.txt참조)
    (참부파일 github 연동.png 참조)
    
 ## 5. 실습 결과
