@@ -32,7 +32,7 @@
 - [x] 데몬 동작여부 확인
 - [x] 기본 운영명령 수행: 이미지, 컨테이너, 리소스 확인 등
 - [x] Dockerfie 만들고 site 폴더안에 index.html 파일 생성
-- [x] 포트 매핑 접속
+- [x] Docker이미지 만들기, 포트 매핑 접속
   
 
 ## 4. 수행로그
@@ -129,10 +129,11 @@ Remove-Item delete-me.txt
    {첨부파일  docker-desktop 화면.png 참조)
    (첨부파일  dockerfile-terminal-log.txt 첨조)
    (첨부파일 dockerimage-terminal-log.txt 참조)
-   (첨부파일 
+   (첨부파일 docker image.png 참조)
+   
 4) 실습 결과
 PowerShell 명령어를 사용하여 파일과 폴더를 직접 관리하는 방법을 익혔다.
-Docker 기본 운영 명령을 익히고, 컨테이너 실행실습을 하였다.
+Docker 기본 운영 명령을 익히고, 컨테이너 실행실습, Docker Image 만들기, 포트 매칭을 하였다.
 
 
 
