@@ -5,7 +5,7 @@
 1) PowerShell 터미널을 사용하여 파일과 폴더를 생성하고,
   복사하고, 이동하고, 이름을 변경하고, 삭제하는 방법을 실습하였다.
 
-2) Docker Desktop을 섪치하고 기본 점검(버전확인 등), 기본 운영 명령수행,컨테이너 실행실습을 하였다.
+2) Docker Desktop을 설치하고 기본 점검(버전확인 등), 기본 운영 명령수행,컨테이너 실행실습, 포트 매핑을 하였다.
 
 ## 2. 실행 환경
 
@@ -32,9 +32,11 @@
 - [x] 데몬 동작여부 확인
 - [x] 기본 운영명령 수행: 이미지, 컨테이너, 리소스 확인 등
 - [x] Dockerfie 만들고 site 폴더안에 index.html 파일 생성
+- [x] 포트 매핑 접속
+  
 
 ## 4. 수행로그
-1) Power Shell  터미널-  실습실행 결과: {첨부파일  터미널-terminal-log.txt 참조)
+  1) Power Shell  터미널-  실습실행 결과: {첨부파일  터미널-terminal-log.txt 참조)
 - 현재 위치 확인
   현재 작업 중인 폴더의 위치를 확인하였다.
 
@@ -126,8 +128,9 @@ Remove-Item delete-me.txt
    {첨부파일  docker-terminal-log.txt 참조)
    {첨부파일  docker-desktop 화면.png 참조)
    (첨부파일  dockerfile-terminal-log.txt 첨조)
-
-3) 실습 결과
+   (첨부파일 dockerimage-terminal-log.txt 참조)
+   (첨부파일 
+4) 실습 결과
 PowerShell 명령어를 사용하여 파일과 폴더를 직접 관리하는 방법을 익혔다.
 Docker 기본 운영 명령을 익히고, 컨테이너 실행실습을 하였다.
 
