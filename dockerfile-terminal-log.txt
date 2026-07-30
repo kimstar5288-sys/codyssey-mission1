@@ -1,0 +1,139 @@
+﻿**********************
+Windows PowerShell 기록 시작
+시작 시간: 20260729142922
+사용자 이름: DESKTOP-FOK8PPV\김성완
+RunAs 사용자: DESKTOP-FOK8PPV\김성완
+구성 이름: 
+Machine: DESKTOP-FOK8PPV (Microsoft Windows NT 10.0.19045.0)
+호스트 응용 프로그램: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+프로세스 ID: 6500
+PSVersion: 5.1.19041.6456
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.19041.6456
+BuildVersion: 10.0.19041.6456
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+기록이 시작되었습니다. 출력 파일은 dockerfile-terminal-log.txt입니다.
+PS C:\Users\김성완> cd $HOME\Documents\codyssey-mission1
+PS C:\Users\김성완\Documents\codyssey-mission1> Get-Location
+
+Path
+----
+C:\Users\김성완\Documents\codyssey-mission1
+
+
+PS C:\Users\김성완\Documents\codyssey-mission1> New-Item -ItemType File -Name Dockerfile
+
+
+    디렉터리: C:\Users\김성완\Documents\codyssey-mission1
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----      2026-07-29   오후 2:30              0 Dockerfile
+
+
+PS C:\Users\김성완\Documents\codyssey-mission1> Get-ChildItem
+
+
+    디렉터리: C:\Users\김성완\Documents\codyssey-mission1
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----      2026-07-28   오후 4:32                practice
+-a----      2026-07-29   오후 2:30              0 Dockerfile
+-a----      2026-07-28   오후 4:49           2519 README.md
+-a----      2026-07-28   오후 4:34          12282 terminal-log.txt
+
+
+PS C:\Users\김성완\Documents\codyssey-mission1> notepad Dockerfile
+PS C:\Users\김성완\Documents\codyssey-mission1> Get-Content Dockerfile
+FROM nginx:alpine
+
+LABEL org.opencontainers.image.title="codyssey-mission1"
+
+COPY site/ /usr/share/nginx/html/
+PS C:\Users\김성완\Documents\codyssey-mission1> mkdir site
+
+
+    디렉터리: C:\Users\김성완\Documents\codyssey-mission1
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----      2026-07-29   오후 2:33                site
+
+
+PS C:\Users\김성완\Documents\codyssey-mission1> Get-ChildItem
+
+
+    디렉터리: C:\Users\김성완\Documents\codyssey-mission1
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----      2026-07-28   오후 4:32                practice
+d-----      2026-07-29   오후 2:33                site
+-a----      2026-07-29   오후 2:32            114 Dockerfile
+-a----      2026-07-28   오후 4:49           2519 README.md
+-a----      2026-07-28   오후 4:34          12282 terminal-log.txt
+
+
+PS C:\Users\김성완\Documents\codyssey-mission1> New-Item site\index.html -ItemType File
+
+
+    디렉터리: C:\Users\김성완\Documents\codyssey-mission1\site
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----      2026-07-29   오후 2:34              0 index.html
+
+
+PS C:\Users\김성완\Documents\codyssey-mission1> notepad site\index.html
+PS C:\Users\김성완\Documents\codyssey-mission1> docker build -t codyssey-mission1 .
+[+] Building 21.6s (8/8) FINISHED                                                                  docker:desktop-linux
+ => [internal] load build definition from Dockerfile                                                               0.3s
+ => => transferring dockerfile: 151B                                                                               0.1s
+ => [internal] load metadata for docker.io/library/nginx:alpine                                                    4.2s
+ => [auth] library/nginx:pull token for registry-1.docker.io                                                       0.0s
+ => [internal] load .dockerignore                                                                                  0.1s
+ => => transferring context: 2B                                                                                    0.0s
+ => [internal] load build context                                                                                  0.2s
+ => => transferring context: 243B                                                                                  0.0s
+ => [1/2] FROM docker.io/library/nginx:alpine@sha256:4a73073bd557c65b759505da037898b61f1be6cbcc3c2c3aeac22d2a470  14.0s
+ => => resolve docker.io/library/nginx:alpine@sha256:4a73073bd557c65b759505da037898b61f1be6cbcc3c2c3aeac22d2a470c  0.1s
+ => => sha256:390dc935348d8070e695fbaae2a4bb114fb9e69c59f628e7576036ee9d5244c9 1.40kB / 1.40kB                     0.2s
+ => => sha256:46519e7231d2eb5604df229beb44d59719a489eaa7aca52982535a010b07a9ed 20.31MB / 20.31MB                  10.2s
+ => => sha256:d0008c891db48b5f526d914bce9e8d889fe1a9d1f08291ae03fe97f871726f38 0B / 1.21kB                        16.0s
+ => => sha256:46f977ee452f4399c208714afa034868d6056864f8a0cf3c643ab143dd802c80 404B / 404B                         0.9s
+ => => sha256:62bec68d7c31c4c8a19d812d84da5f7748e54690c037979945b6c5b6c924b142 957B / 957B                         0.9s
+ => => sha256:3cd534fe98c64d68a1f4f1c83abb8d5cba7ecfd7be88e592389929d12e6253da 1.89MB / 1.89MB                     2.4s
+ => => sha256:1223f016b4e4a2c21f7c49d4837fbfd47a9da6436b511690ca1e582fc2810d59 627B / 627B                         0.6s
+ => => sha256:55afa1ecc21d2bb5e5045f32dafee56272ffd89860bac26f6c32123439af26a4 3.85MB / 3.85MB                     2.9s
+ => => extracting sha256:55afa1ecc21d2bb5e5045f32dafee56272ffd89860bac26f6c32123439af26a4                          2.2s
+ => => extracting sha256:3cd534fe98c64d68a1f4f1c83abb8d5cba7ecfd7be88e592389929d12e6253da                          1.1s
+ => => extracting sha256:1223f016b4e4a2c21f7c49d4837fbfd47a9da6436b511690ca1e582fc2810d59                          0.2s
+ => => extracting sha256:62bec68d7c31c4c8a19d812d84da5f7748e54690c037979945b6c5b6c924b142                          0.3s
+ => => extracting sha256:46f977ee452f4399c208714afa034868d6056864f8a0cf3c643ab143dd802c80                          0.2s
+ => => extracting sha256:d0008c891db48b5f526d914bce9e8d889fe1a9d1f08291ae03fe97f871726f38                          0.1s
+ => => extracting sha256:390dc935348d8070e695fbaae2a4bb114fb9e69c59f628e7576036ee9d5244c9                          0.2s
+ => => extracting sha256:46519e7231d2eb5604df229beb44d59719a489eaa7aca52982535a010b07a9ed                          2.9s
+ => [2/2] COPY site/ /usr/share/nginx/html/                                                                        0.6s
+ => exporting to image                                                                                             1.3s
+ => => exporting layers                                                                                            0.4s
+ => => exporting manifest sha256:85ef3515366ee657e6c36a9290f29bad992f68529cc48f173850a63ab713f8ae                  0.1s
+ => => exporting config sha256:4af51dc66e4b080f8256b5cd9535165e6a3f51869502c5af2e236c20e81f91c5                    0.4s
+ => => exporting attestation manifest sha256:71d61fb11ae6680eaab3fc5de009ff5bc3900a0dbd1f05da328cb88bd3f6f261      0.1s
+ => => exporting manifest list sha256:113d790d1b9ed6ee8b56f08e154b6a400a088b1fce805d158ec8fd3a1007784d             0.1s
+ => => naming to docker.io/library/codyssey-mission1:latest                                                        0.0s
+ => => unpacking to docker.io/library/codyssey-mission1:latest                                                     0.1s
+PS C:\Users\김성완\Documents\codyssey-mission1> Stop-Transcript
+**********************
+Windows PowerShell 기록 끝
+종료 시간: 20260729143818
+**********************
