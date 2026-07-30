@@ -131,11 +131,11 @@ Remove-Item delete-me.txt
    (첨부파일  dockerfile-terminal-log.txt 첨조)
    (첨부파일 dockerimage-terminal-log.txt 참조)
    (첨부파일 docker image.png 참조)
-   (첨부파일 
+   (첨부파일 dockervolume_terminal-log.txt 참조)
    
 4) 실습 결과
 PowerShell 명령어를 사용하여 파일과 폴더를 직접 관리하는 방법을 익혔다.
-Docker 기본 운영 명령을 익히고, 컨테이너 실행실습, Docker Image 만들기, 포트 매칭을 하였다.
+Docker 기본 운영 명령을 익히고, 컨테이너 실행실습, Docker Image 만들기, 포트 매칭,Docker Volume 영속성 검증을 하였다.
 
 
 
