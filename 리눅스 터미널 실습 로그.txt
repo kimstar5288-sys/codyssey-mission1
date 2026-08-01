@@ -1,0 +1,68 @@
+
+* 현재위치확인
+root@DESKTOP-FOK8PPV:~# pwd
+/root
+
+*일반목록
+root@DESKTOP-FOK8PPV:~# ls
+odyssey.practice  practice
+
+* 상세목록
+root@DESKTOP-FOK8PPV:~# ls -l
+total 0
+drwxr-xr-x 1 root root 512 Jul 28 01:56 odyssey.practice
+drwxr-xr-x 1 root root 512 Jul 28 01:19 practice
+
+* 숨은파일 목록
+root@DESKTOP-FOK8PPV:~# ls -a
+.  ..  .bash_history  .bashrc  .motd_shown  .profile  .ssh  odyssey.practice  practice
+
+
+* 폴더 생성하기
+root@DESKTOP-FOK8PPV:~# mkdir wsl-practice2
+root@DESKTOP-FOK8PPV:~# ls
+odyssey.practice  practice  wsl-practice  wsl-practice2
+
+* 폴더 안으로 이동
+root@DESKTOP-FOK8PPV:~# cd wsl-practice2
+root@DESKTOP-FOK8PPV:~/wsl-practice2# pwd
+/root/wsl-practice2
+root@DESKTOP-FOK8PPV:~/wsl-practice2#
+
+* 하위폴더 만들기
+root@DESKTOP-FOK8PPV:~/wsl-practice2# mkdir backup
+root@DESKTOP-FOK8PPV:~/wsl-practice2# ls
+backup
+
+* 빈 파일 만들기
+root@DESKTOP-FOK8PPV:~/wsl-practice2# touch hello.txt
+root@DESKTOP-FOK8PPV:~/wsl-practice2# ls -l
+total 0
+drwxr-xr-x 1 root root 512 Aug  1 11:32 backup
+-rw-r--r-- 1 root root   0 Aug  1 11:34 hello.txt
+root@DESKTOP-FOK8PPV:~/wsl-practice2#
+
+* 파일에 내용 입력하기
+root@DESKTOP-FOK8PPV:~/wsl-practice2# echo "Hello WSL" > hello.txt
+root@DESKTOP-FOK8PPV:~/wsl-practice2# cat hello.txt
+Hello WSL
+root@DESKTOP-FOK8PPV:~/wsl-practice2#
+
+
+* 파일 복사하기
+root@DESKTOP-FOK8PPV:~/wsl-practice2# cp hello.txt hello-copy.txt
+root@DESKTOP-FOK8PPV:~/wsl-practice2# ls -l
+total 0
+drwxr-xr-x 1 root root 512 Aug  1 11:32 backup
+-rw-r--r-- 1 root root  10 Aug  1 11:38 hello-copy.txt
+-rw-r--r-- 1 root root  10 Aug  1 11:36 hello.txt
+
+* 파일 이름 변경하기
+root@DESKTOP-FOK8PPV:~/wsl-practice2# mv hello-copy.txt renamed.txt
+root@DESKTOP-FOK8PPV:~/wsl-practice2# ls
+backup  hello.txt  renamed.txt
+
+* 파일 이동하기
+root@DESKTOP-FOK8PPV:~/wsl-practice2# mv renamed.txt backup/
+root@DESKTOP-FOK8PPV:~/wsl-practice2# ls
+backup  hello.txt
