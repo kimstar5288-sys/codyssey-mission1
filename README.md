@@ -39,93 +39,74 @@
   
 
 ## 4. 수행로그
-  1) Power Shell  터미널-  실습실행 결과: {첨부파일  터미널-terminal-log.txt 참조)
-- 현재 위치 확인
-  현재 작업 중인 폴더의 위치를 확인하였다.
+  1) 리눅스 터미널-  실습실행 결과: {첨부파일  리눅스 터미널 실습 로그.txt 참조)
+* 현재위치확인
+root@DESKTOP-FOK8PPV:~# pwd
+/root
 
-```powershell
-Get-Location
-```
+*일반목록
+root@DESKTOP-FOK8PPV:~# ls
+odyssey.practice  practice
 
--목록 확인
-현재 폴더의 파일과 폴더 목록을 확인하였다.
+* 상세목록
+root@DESKTOP-FOK8PPV:~# ls -l
+total 0
+drwxr-xr-x 1 root root 512 Jul 28 01:56 odyssey.practice
+drwxr-xr-x 1 root root 512 Jul 28 01:19 practice
 
-```powershell
-Get-ChildItem
-```
-
-숨김 파일을 포함한 목록도 확인하였다.
-
-```powershell
-Get-ChildItem -Force
-```
-
-- 폴더 생성 및 이동
-`practice` 폴더를 생성하였다.
-
-```powershell
-New-Item -ItemType Directory -Name practice
-```
-
-생성한 폴더로 이동하였다.
-
-```powershell
-Set-Location practice
-```
-
-- 빈 파일 생성
-
-`empty.txt`라는 빈 파일을 생성하였다.
-
-```powershell
-New-Item -ItemType File -Name empty.txt
-```
-
-- 파일 내용 작성 및 확인
-
-`hello.txt` 파일에 문장을 저장하였다.
-
-```powershell
-"Codyssey Mission 1 PowerShell Practice" | Set-Content hello.txt
-```
-
-파일 내용을 확인하였다.
-
-```powershell
-Get-Content hello.txt
-```
+* 숨은파일 목록
+root@DESKTOP-FOK8PPV:~# ls -a
+.  ..  .bash_history  .bashrc  .motd_shown  .profile  .ssh  odyssey.practice  practice
 
 
-- 파일 복사
+* 폴더 생성하기
+root@DESKTOP-FOK8PPV:~# mkdir wsl-practice2
+root@DESKTOP-FOK8PPV:~# ls
+odyssey.practice  practice  wsl-practice  wsl-practice2
 
-`hello.txt`를 `hello-copy.txt`로 복사하였다.
+* 폴더 안으로 이동
+root@DESKTOP-FOK8PPV:~# cd wsl-practice2
+root@DESKTOP-FOK8PPV:~/wsl-practice2# pwd
+/root/wsl-practice2
+root@DESKTOP-FOK8PPV:~/wsl-practice2#
 
-```powershell
-Copy-Item hello.txt hello-copy.txt
-```
+* 하위폴더 만들기
+root@DESKTOP-FOK8PPV:~/wsl-practice2# mkdir backup
+root@DESKTOP-FOK8PPV:~/wsl-practice2# ls
+backup
 
-- 파일 이름 변경
+* 빈 파일 만들기
+root@DESKTOP-FOK8PPV:~/wsl-practice2# touch hello.txt
+root@DESKTOP-FOK8PPV:~/wsl-practice2# ls -l
+total 0
+drwxr-xr-x 1 root root 512 Aug  1 11:32 backup
+-rw-r--r-- 1 root root   0 Aug  1 11:34 hello.txt
+root@DESKTOP-FOK8PPV:~/wsl-practice2#
 
-`hello-copy.txt` 파일의 이름을 `renamed.txt`로 변경하였다.
+* 파일에 내용 입력하기
+root@DESKTOP-FOK8PPV:~/wsl-practice2# echo "Hello WSL" > hello.txt
+root@DESKTOP-FOK8PPV:~/wsl-practice2# cat hello.txt
+Hello WSL
+root@DESKTOP-FOK8PPV:~/wsl-practice2#
 
-```powershell
-Rename-Item hello-copy.txt renamed.txt
-```
 
-- 파일 이동
+* 파일 복사하기
+root@DESKTOP-FOK8PPV:~/wsl-practice2# cp hello.txt hello-copy.txt
+root@DESKTOP-FOK8PPV:~/wsl-practice2# ls -l
+total 0
+drwxr-xr-x 1 root root 512 Aug  1 11:32 backup
+-rw-r--r-- 1 root root  10 Aug  1 11:38 hello-copy.txt
+-rw-r--r-- 1 root root  10 Aug  1 11:36 hello.txt
 
-`renamed.txt` 파일을 `backup` 폴더로 이동하였다.
+* 파일 이름 변경하기
+root@DESKTOP-FOK8PPV:~/wsl-practice2# mv hello-copy.txt renamed.txt
+root@DESKTOP-FOK8PPV:~/wsl-practice2# ls
+backup  hello.txt  renamed.txt
 
-```powershell
-Move-Item renamed.txt backup
-```
-
-- 파일 삭제
-실습용 파일을 삭제하였다.
-
-```powershell
-Remove-Item delete-me.txt
-```
+* 파일 이동하기
+root@DESKTOP-FOK8PPV:~/wsl-practice2# mv renamed.txt backup/
+root@DESKTOP-FOK8PPV:~/wsl-practice2# ls
+backup  hello.txt
 
 2) Docker Desktop 실습실행 결과
    {첨부파일  docker-terminal-log.txt 참조)
